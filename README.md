@@ -1,95 +1,39 @@
-# João Pedro Plinta, portfólio
+# João Pedro Plinta
 
-[![joaoplintaportfolio.dev](public/og.png)](https://joaoplintaportfolio.dev/)
+[![Portfólio do Pinguim](public/og.png)](https://joaoplintaportfolio.dev/)
 
-Portfólio pessoal de desenvolvedor full stack, no ar em **[joaoplintaportfolio.dev](https://joaoplintaportfolio.dev/)**.
+Desenvolvedor full stack, do banco de dados ao kernel. Estudo Ciência da Computação no IFPR Campus Pinhais e construo sistemas que ficam no ar: SaaS, plataformas de evento e ferramentas de operação.
 
-A abertura é uma capa de revista: o nome "Pinguim" (o apelido, e o pinguim que tenho tatuado) ocupando a largura, com setas apontando para os projetos. Abaixo vêm cinco estudos de caso, o Sobre, as ferramentas, os certificados e o contato.
+Este repositório é o código do meu portfólio, em **[joaoplintaportfolio.dev](https://joaoplintaportfolio.dev/)**. A abertura é uma capa de revista com o meu apelido, Pinguim, e cada projeto tem um estudo de caso com as decisões e os números conferidos no repositório de origem.
 
-## O que tem no site
+## Projetos em destaque
 
-- **Estudos de caso** em `/projetos/:slug`, com decisões, números conferidos nos repositórios e telas reais (com dados de demonstração):
-  - **Plana**, SaaS de agendamentos em produção;
-  - **Hackathon IFPR**, plataforma para operar um evento de ponta a ponta;
-  - **OficinaFlow**, ordens de serviço com orçamento por versão e estoque coerente sob concorrência;
-  - **Minicurso eBPF**, extensão apresentada no SciTec do IFPR;
-  - **TCC**, benchmark de overhead de eBPF, Sysstat, Prometheus e Docker.
-- Scroll narrativo na seção de trabalho, prévia da tela que segue o mouse nas chamadas da capa e carrossel de telas no celular.
-- Tema claro e escuro, que respeita a preferência do sistema e `prefers-reduced-motion`.
-- Open Graph para prévia de compartilhamento, favicon e página 404.
+### [Plana](https://joaoplintaportfolio.dev/projetos/plana)
+SaaS de agendamentos em produção: agenda online, profissionais, pacotes de sessões, planos e pagamentos. Projeto individual, multi-tenant, com PIX, cartão e webhook processado em fila.
+[Ver o produto](https://www.planaapp.com.br/)
 
-## Stack
+[![Painel do Plana](public/plana/dashboard.webp)](https://joaoplintaportfolio.dev/projetos/plana)
 
-- [React 18](https://react.dev/) e [TypeScript](https://www.typescriptlang.org/)
-- [Vite](https://vite.dev/)
-- [React Router](https://reactrouter.com/) para as rotas dos estudos de caso
-- CSS próprio, sem framework, em `src/site/site.css`
-- Fontes Manrope e JetBrains Mono, pelo Google Fonts
-- Deploy na [Vercel](https://vercel.com/)
+### [Hackathon IFPR](https://joaoplintaportfolio.dev/projetos/hackathon-ifpr)
+Inscrições, equipes, submissões, jurados, resultado e certificados do 1º Hackathon do IFPR Campus Pinhais, em um único sistema. Nota ponderada com desempate, jurados com carga balanceada e plano B para o dia do evento.
+[Ver o produto](https://hackathon-ifpr-production.up.railway.app/)
 
-## Como rodar
+[![Distribuição de jurados do Hackathon IFPR](public/hackathon/jurados.webp)](https://joaoplintaportfolio.dev/projetos/hackathon-ifpr)
 
-Requer Node.js 20 ou superior.
+### [OficinaFlow](https://joaoplintaportfolio.dev/projetos/oficinaflow)
+Ordens de serviço do recebimento à entrega: diagnóstico, orçamento por versão, aprovação do cliente, reserva de peças e reparo. Estoque em livro-razão, reserva tudo ou nada e 392 testes, com 11 classes de concorrência em PostgreSQL.
+[Ver o produto](https://oficinaflow-production.up.railway.app)
 
-```bash
-git clone https://github.com/joaopedroplinta/portfolio.git
-cd portfolio
-npm install
-npm run dev        # http://localhost:5173
-```
+[![Ordens do OficinaFlow](public/oficinaflow/ordens.webp)](https://joaoplintaportfolio.dev/projetos/oficinaflow)
 
-Outros comandos:
+### [Minicurso eBPF](https://joaoplintaportfolio.dev/projetos/ebpf-scitec)
+Observabilidade direto do kernel, apresentada no SciTec do IFPR: a teoria do eBPF e um coletor que conta o tráfego TCP de um container sem ler o `/proc`.
 
-```bash
-npm run build      # build de produção em dist/
-npm run preview    # serve o build localmente
-npm run lint       # ESLint
-```
+### [TCC: custo de observar um sistema](https://joaoplintaportfolio.dev/projetos/tcc-monitoramento)
+Benchmark do overhead de eBPF, Sysstat, Prometheus e Docker monitorando um WAF, em 480 execuções reprodutíveis. Em andamento, a defesa final ainda está por vir.
+[Ver o laboratório](https://vnf-lab.up.railway.app/)
 
-## Estrutura
-
-```
-src/
-├── site/            # o site atual
-│   ├── Home.tsx     # capa, trabalho, sobre, ferramentas, certificados e contato
-│   ├── CasePage.tsx # página de estudo de caso
-│   ├── Layout.tsx   # cabeçalho, menu lateral e rodapé
-│   ├── UI.tsx       # ícones
-│   ├── ThemeToggle.tsx
-│   ├── toolIcons.ts # logos das ferramentas (Simple Icons)
-│   ├── content.ts   # os projetos em destaque (vitrine e capa)
-│   └── site.css     # todos os estilos
-├── data/            # conteúdo
-│   ├── index.ts         # perfil, projetos, ferramentas e linha do tempo
-│   ├── caseStudies.ts   # os estudos de caso
-│   └── certifications.ts
-└── hooks/           # seção ativa na rolagem
-public/
-├── brand/           # pinguim de tinta
-├── plana/ hackathon/ tcc/   # telas e gráficos dos estudos de caso
-└── og.png           # imagem de compartilhamento
-docs/                # planejamento e direção visual
-```
-
-## Como editar o conteúdo
-
-| Quero mudar | Arquivo |
-| --- | --- |
-| Texto de um estudo de caso | `src/data/caseStudies.ts` |
-| Resumo e ficha do projeto na vitrine | `src/site/content.ts` |
-| Projetos menores, ferramentas, linha do tempo, links de contato | `src/data/index.ts` |
-| Cursos e certificados | `src/data/certifications.ts` |
-| Cores, fontes e espaçamentos | variáveis no topo de `src/site/site.css` |
-
-O texto dos estudos de caso só afirma o que está no repositório de cada projeto. Ao mudar um número ou uma decisão, confira na fonte.
-
-## Deploy
-
-A Vercel publica a `main` automaticamente e cria um preview para cada pull request. O `vercel.json` manda qualquer rota para o `index.html`, para que um link direto como `/projetos/plana` funcione.
-
-## Versão anterior
-
-A versão do portfólio antes do redesign está guardada na release [v1.0.0](https://github.com/joaopedroplinta/portfolio/releases/tag/v1.0.0). Para voltar a ela: `git checkout v1.0.0`.
+[![Tempo de resposta por ferramenta de monitoramento](public/tcc/tempo-resposta.webp)](https://joaoplintaportfolio.dev/projetos/tcc-monitoramento)
 
 ## Contato
 
@@ -97,6 +41,4 @@ A versão do portfólio antes do redesign está guardada na release [v1.0.0](htt
 - LinkedIn: [joao-pedro-plinta](https://linkedin.com/in/joao-pedro-plinta)
 - GitHub: [@joaopedroplinta](https://github.com/joaopedroplinta)
 
-## Licença
-
-[MIT](LICENSE)
+Feito com React, TypeScript e Vite, hospedado na Vercel. Código sob licença [MIT](LICENSE).
