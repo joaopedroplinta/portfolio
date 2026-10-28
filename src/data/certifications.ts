@@ -12,6 +12,15 @@ export interface Certificate {
 
 export const CERTIFICATIONS: Certificate[] = [
   {
+    title: "Itaú — Java com Inteligência Artificial",
+    issuer: "DIO",
+    area: "Back-end e IA",
+    date: "2026-10",
+    dateLabel: "out. 2026",
+    url: "https://www.dio.me/certificate/MYXQC2EH/share",
+    image: "/certificados/itau-java-ia.webp",
+  },
+  {
     title: "Foundations of Cybersecurity",
     issuer: "Google",
     area: "Segurança",
