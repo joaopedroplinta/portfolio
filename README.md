@@ -1,8 +1,10 @@
 # João Pedro Plinta, portfólio
 
+[![joaoplintaportfolio.dev](public/og.png)](https://joaoplintaportfolio.dev/)
+
 Portfólio pessoal de desenvolvedor full stack, no ar em **[joaoplintaportfolio.dev](https://joaoplintaportfolio.dev/)**.
 
-A abertura é uma capa de revista: o nome "Pinguim" (o apelido, e o pinguim que tenho tatuado) ocupando a largura, com setas apontando para os projetos. Abaixo vêm quatro estudos de caso, o Sobre, as ferramentas, os certificados e o contato.
+A abertura é uma capa de revista: o nome "Pinguim" (o apelido, e o pinguim que tenho tatuado) ocupando a largura, com setas apontando para os projetos. Abaixo vêm cinco estudos de caso, o Sobre, as ferramentas, os certificados e o contato.
 
 ## O que tem no site
 
@@ -30,8 +32,8 @@ A abertura é uma capa de revista: o nome "Pinguim" (o apelido, e o pinguim que 
 Requer Node.js 20 ou superior.
 
 ```bash
-git clone https://github.com/joaopedroplinta/meu_portfolio.git
-cd meu_portfolio
+git clone https://github.com/joaopedroplinta/portfolio.git
+cd portfolio
 npm install
 npm run dev        # http://localhost:5173
 ```
@@ -87,7 +89,7 @@ A Vercel publica a `main` automaticamente e cria um preview para cada pull reque
 
 ## Versão anterior
 
-A versão do portfólio antes do redesign está guardada na release [v1.0.0](https://github.com/joaopedroplinta/meu_portfolio/releases/tag/v1.0.0). Para voltar a ela: `git checkout v1.0.0`.
+A versão do portfólio antes do redesign está guardada na release [v1.0.0](https://github.com/joaopedroplinta/portfolio/releases/tag/v1.0.0). Para voltar a ela: `git checkout v1.0.0`.
 
 ## Contato
 
