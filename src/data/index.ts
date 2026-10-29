@@ -174,8 +174,8 @@ export const PROJECTS: Project[] = [
     category: "Algoritmos",
     title: "Caixeiro Viajante",
     description:
-      "Exploração de algoritmos para o Problema do Caixeiro Viajante, um clássico de otimização de rotas.",
-    tags: ["Python", "Algoritmos", "Otimização"],
+      "Solver de TSP em Python com núcleo em C: Lin-Kernighan, alpha-nearness e ILS paralelo. Chega ao ótimo nas instâncias TSPLIB de até 1002 nós e resolve 200 mil nós em 67 s, sem matriz de distâncias.",
+    tags: ["Python", "C", "Algoritmos", "Otimização"],
     github: "https://github.com/joaopedroplinta/caixeiro-viajante",
   },
 ];
