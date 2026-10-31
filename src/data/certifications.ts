@@ -12,6 +12,15 @@ export interface Certificate {
 
 export const CERTIFICATIONS: Certificate[] = [
   {
+    title: "GitHub Foundations",
+    issuer: "DataCamp",
+    area: "Git e GitHub",
+    date: "2026-10",
+    dateLabel: "out. 2026",
+    url: "https://www.datacamp.com/statement-of-accomplishment/track/9f2c7a1c637618613a88ac482c13a8a025d0b528",
+    image: "/certificados/datacamp-github-foundations.webp",
+  },
+  {
     title: "Itaú — Java com Inteligência Artificial",
     issuer: "DIO",
     area: "Back-end e IA",
