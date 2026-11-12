@@ -188,6 +188,11 @@ export interface TimelineItem {
 
 export const TIMELINE: TimelineItem[] = [
   {
+    year: "Out 2026 — atual",
+    title: "Fundador e Desenvolvedor Full Stack · Artic Development",
+    desc: "Desenvolvimento de software sob medida para clientes da Artic Development: sites, apps, APIs e automações. Atuo do banco de dados à interface: modelagem, regras de negócio, telas, testes e deploy. Stack principal: Laravel 13, Inertia.js, React 19, TypeScript, Tailwind 4 e PostgreSQL.",
+  },
+  {
     year: "Jul 2025 — Out 2026",
     title: "Estágio em desenvolvimento Full Stack · Celepar",
     desc: "Estágio nos sistemas Sic.Cultura, Sic.Esporte e TGA do CCTG, de gestão de políticas culturais e esportivas do governo estadual. Entreguei correções de regras de negócio, novas telas, relatórios em PDF e scripts de banco de dados, trabalhando com SVN e Git. Estimei o esforço das demandas pelo método de pontos de função. Também contribuí com o SGA-MR, sistema de gestão de resíduos em Java, organizando o armazenamento de anexos e corrigindo o fluxo de uma tela. Stack: PHP, Java, PostgreSQL, Smarty, JSF e jQuery, acompanhando o ciclo do desenvolvimento à homologação.",
