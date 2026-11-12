@@ -788,6 +788,11 @@ main:focus {
   color: var(--muted);
   font-size: 15px;
 }
+.others-links {
+  display: grid;
+  justify-items: end;
+  gap: 6px;
+}
 
 /* Sobre */
 .about {
