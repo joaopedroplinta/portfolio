@@ -60,6 +60,7 @@ export interface Project {
   tags: string[];
   demo?: string;
   github?: string;
+  links?: { label: string; href: string }[];
 }
 
 // O primeiro projeto recebe o selo "Mais recente" automaticamente.
@@ -143,6 +144,21 @@ export const PROJECTS: Project[] = [
     tags: ["eBPF", "Sysstat", "Prometheus", "Python", "Docker", "Linux"],
     demo: "https://vnf-lab.up.railway.app/",
     github: "https://github.com/joaopedroplinta/vnf-monitoring-benchmark",
+  },
+  {
+    featured: false,
+    id: "manuais-ebpf",
+    category: "Extensão universitária — material didático",
+    title: "Manuais de eBPF",
+    description:
+      "Três manuais de eBPF em português, escritos em dupla num projeto de extensão do IFPR: observabilidade, segurança e redes. São 165 páginas em LaTeX, de kprobes e LSM a XDP, Traffic Control e Cilium.",
+    tags: ["eBPF", "Linux", "LaTeX", "Observabilidade", "Segurança", "Redes"],
+    github: "https://github.com/joaopedroplinta/manuais-ebpf",
+    links: [
+      { label: "Observabilidade", href: "/manuais-ebpf/ebpf-observabilidade.pdf" },
+      { label: "Segurança", href: "/manuais-ebpf/ebpf-seguranca.pdf" },
+      { label: "Redes", href: "/manuais-ebpf/ebpf-redes.pdf" },
+    ],
   },
   {
     featured: false,

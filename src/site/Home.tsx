@@ -233,11 +233,18 @@ function Work() {
                 <span className="others-name">{project.title}</span>
                 <span className="others-desc">{project.description}</span>
                 <span className="others-tags">{project.tags.join(", ")}</span>
-                {project.github && (
-                  <a href={project.github} target="_blank" rel="noreferrer" className="s-link" aria-label={`Código de ${project.title} no GitHub`}>
-                    Código <Icon name="arrow-up-right" />
-                  </a>
-                )}
+                <span className="others-links">
+                  {project.github && (
+                    <a href={project.github} target="_blank" rel="noreferrer" className="s-link" aria-label={`Código de ${project.title} no GitHub`}>
+                      Código <Icon name="arrow-up-right" />
+                    </a>
+                  )}
+                  {project.links?.map((link) => (
+                    <a key={link.href} href={link.href} target="_blank" rel="noreferrer" className="s-link" aria-label={`${project.title}: ${link.label} (PDF)`}>
+                      {link.label} <Icon name="arrow-up-right" />
+                    </a>
+                  ))}
+                </span>
               </li>
             ))}
           </ul>
