@@ -140,7 +140,7 @@ export const PROJECTS: Project[] = [
     category: "Pesquisa — TCC",
     title: "TCC: monitoramento de VNF",
     description:
-      "Benchmark que compara o overhead de eBPF, Sysstat, Prometheus e Docker ao monitorar um WAF virtualizado, com 480 execuções reprodutíveis.",
+      "Benchmark que compara o overhead de eBPF, Sysstat, Prometheus e Docker ao monitorar um WAF virtualizado, com 960 execuções reprodutíveis em duas baterias.",
     tags: ["eBPF", "Sysstat", "Prometheus", "Python", "Docker", "Linux"],
     demo: "https://vnf-lab.up.railway.app/",
     github: "https://github.com/joaopedroplinta/vnf-monitoring-benchmark",

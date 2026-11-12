@@ -30,7 +30,7 @@ Ordens de serviço do recebimento à entrega: diagnóstico, orçamento por vers�
 Observabilidade direto do kernel, apresentada no SciTec do IFPR: a teoria do eBPF e um coletor que conta o tráfego TCP de um container sem ler o `/proc`.
 
 ### [TCC: custo de observar um sistema](https://joaoplintaportfolio.dev/projetos/tcc-monitoramento)
-Benchmark do overhead de eBPF, Sysstat, Prometheus e Docker monitorando um WAF, em 480 execuções reprodutíveis. Em andamento, a defesa final ainda está por vir.
+Benchmark do overhead de eBPF, Sysstat, Prometheus e Docker monitorando um WAF, em 960 execuções reprodutíveis. Em andamento, a defesa final ainda está por vir.
 [Ver o laboratório](https://vnf-lab.up.railway.app/)
 
 [![Tempo de resposta por ferramenta de monitoramento](public/tcc/tempo-resposta.webp)](https://joaoplintaportfolio.dev/projetos/tcc-monitoramento)

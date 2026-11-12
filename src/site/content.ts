@@ -113,9 +113,9 @@ int BPF_KPROBE(trace_tcp_sendmsg, struct sock *sk,
     name: "TCC",
     kind: "Pesquisa sobre monitoramento de redes virtualizadas",
     summary:
-      "Quanto custa observar um sistema? Medimos o overhead de eBPF, Sysstat, Prometheus e Docker monitorando um WAF, em 480 execuções reprodutíveis. A defesa final ainda está por vir.",
+      "Quanto custa observar um sistema? Medimos o overhead de eBPF, Sysstat, Prometheus e Docker monitorando um WAF, em 960 execuções reprodutíveis. A defesa final ainda está por vir.",
     facts: [
-      { label: "Experimento", value: "4 ferramentas, 4 volumes, 30 repetições" },
+      { label: "Experimento", value: "4 ferramentas, 4 volumes, 30 repetições, em duas baterias" },
       { label: "Resultado", value: "eBPF com menor tempo de resposta, de 13% a 15%" },
       { label: "Estatística", value: "Média com intervalo de confiança de 95%" },
       { label: "Status", value: "Passou pela pré-banca, defesa final pendente" },
