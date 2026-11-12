@@ -41,3 +41,5 @@ logs
 
 # Bolt specific
 .bolt/
+.vercel
+.env*
