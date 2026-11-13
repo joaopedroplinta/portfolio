@@ -49,7 +49,7 @@ export const FEATURED: Featured[] = [
     summary:
       "Inscrições, equipes, submissões, jurados, resultado e certificados do 1º Hackathon do IFPR Campus Pinhais, em um único sistema.",
     facts: [
-      { label: "Autoria", value: "Autor único do código, 281 commits" },
+      { label: "Autoria", value: "Autor único do código, 289 commits" },
       { label: "Avaliação", value: "Nota ponderada e desempate em três critérios" },
       { label: "Jurados", value: "Carga balanceada, conflito de interesse bloqueia" },
       { label: "Contingência", value: "Plano B em cinco degraus para o dia do evento" },
