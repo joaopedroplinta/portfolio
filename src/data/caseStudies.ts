@@ -31,7 +31,7 @@ export const CASE_STUDIES: CaseStudy[] = [
     flowTitle: "O caminho de um agendamento",
     flow: ["Negócio", "Profissional", "Disponibilidade", "Agendamento", "Pagamento"],
     screens: [
-      { src: "/plana/agendamento.webp", alt: "Página pública de agendamento do Plana, etapa de escolha do serviço", caption: "Agendamento público em cinco etapas, começando pela escolha do serviço." },
+      { src: "/plana/agendamento.webp", alt: "Página pública de agendamento do Plana, etapa de escolha do serviço", caption: "Agendamento público pelo link do salão, começando pela escolha do serviço." },
       { src: "/plana/agenda.webp", alt: "Agenda do salão no painel do Plana, com agendamentos por dia", caption: "Agenda do salão: agendamentos por dia, com confirmar, concluir e cancelar." },
       { src: "/plana/dashboard.webp", alt: "Visão geral do painel do Plana, com receita diária, status dos agendamentos e serviços mais vendidos", caption: "Visão geral: receita diária, agendamentos por status e serviços mais procurados." },
       { src: "/plana/servicos.webp", alt: "Lista de serviços no painel do Plana, com preço, duração e status", caption: "Catálogo de serviços com preço, duração e status." },
